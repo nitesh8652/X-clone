@@ -1,16 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>X</title>
-    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
-<body>
-    <div class="testing bg-red-500">
-        heuyyy
-        im an santra cat
-        who says meow
+
+<body class="bg-black text-white">
+    <div class="flex max-w-screen-xl mx-auto min-h-screen">
+        <!-- Left Sidebar -->
+        <div class="left w-1/4 p-4 border-r border-gray-700 ">
+            <div class="logo mb-6">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="w-9 h-9 invert w-[70]">
+                    <g>
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="sidebar">
+                <ul class=" text-lg space-y-5 text-2xl flex justify-end flex-col  ">
+                    <li
+                        class="hover:bg-[rgb(24,24,24)] flex items-center w-fit gap-[30px] hover:rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined ">home</span> Home
+                    </li>
+                    <li
+                        class="hover:bg-[rgb(24,24,24)] flex items-center w-fit gap-[30px] hover:rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined ">search</span> Explore
+                    </li>
+                    <li
+                        class="hover:bg-[rgb(24,24,24)] flex items-center w-fit gap-[30px] hover:rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">Notifications</span> Notifications
+                    </li>
+                    <li
+                        class="hover:bg-[rgb(24,24,24)] flex items-center w-fit gap-[30px] hover:rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">chat </span> Messages
+                    </li>
+                    <li
+                        class="hover:bg-[rgb(24,24,24)] flex items-center w-fit gap-[30px] hover:rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">automation</span> Grok
+                    </li>
+                    <li
+                        class="hover:bg-[rgb(24,24,24)] flex items-center w-fit gap-[30px] hover:rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">person</span> Profile
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Center Content -->
+        <div class="w-2/4 border-x-[0.1px] border-white-700 p-4">
+            center
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="w-1/4 p-4 right">
+            <div class="search flex items-center">
+
+                <img src="search.png" alt="search" class="absolute ml-[23px] saturate-0">
+                <input type="text" placeholder="search"
+                    class="w-[100%] rounded-full px-8 py-[9px] m-3 border-[0.1px] border-gray-700 bg-transparent  placeholder:pl-[18px]">
+            </div>
+
+            <div class="prenium border-[0.1px] px-5 py-5 mt-[20px] rounded-[12px]">
+                <h3 class="heading text-[23px] pb-[16px] font-bold">Subscribe to Premium</h3>
+                <h7 class="text-sm">Subscribe to unlock new features and if eligible, receive a share of revenue.</h7>
+                <div
+                    class="buttons bg-[rgb(26,140,216)] w-[96px] p-[8px] mt-[18px] rounded-full font-extrabold hover:bg-[rgb(19,101,156)]">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+
+
+            <div class="follow border-[0.1px] px-5 py-5 mt-[20px] rounded-[12px]">
+                <h1 class="heading text-[23px] pb-[16px] font-bold">Who to follow</h1">
+
+                    <div class="profile1 bg-green-600 flex flex-row">
+                        <div class="pflogo bg-purple-900 w-[56px] h-[56px] items-center rounded-full ">
+
+                            <img src="profile17.jpg" class="object-center object-cover w-full h-full rounded-full" />
+
+                        </div>
+                        <div class="name pl-[5px] font-light text-[20px]">Rajlaxmi_c</div>
+
+                        <div
+                        class="buttons bg-[rgb(255,255,255)] text-black rounded-full  justify-center items-center h-[36px] text-[14px] w-[60px]">
+                        <button>Follow</button>
+                    </div>
+
+                    </div>
+
+
+
+
+                    <div class="profile2 bg-red-600">dd</div>
+                    <div class="profile3 bg-sky-600">dd</div>
+
+
+            </div>
+
+
+
+
+        </div>
+
     </div>
 </body>
+
 </html>
