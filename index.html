@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,13 +7,12 @@
     <link rel="stylesheet" href="src/output.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
-
 <body class="bg-black text-white">
     <div class="flex max-w-screen-xl mx-auto min-h-screen">
         <!-- Left Sidebar -->
-        <div class="left w-1/4 p-4 border-r border-gray-700 ">
+        <div class="w-[23%] p-4 border-r border-gray-700">
             <div class="logo mb-6">
-                <svg viewBox="0 0 24 24" aria-hidden="true" class="w-9 h-9 invert w-[70]">
+                <svg viewBox="0 0 24 24" aria-label="X Logo" class="w-9 h-9 invert">
                     <g>
                         <path
                             d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
@@ -22,164 +20,95 @@
                     </g>
                 </svg>
             </div>
-
             <div class="sidebar">
-                <ul class=" text-lg space-y-5 text-2xl flex justify-end flex-col  ">
-                    <li
-                        class="hover:bg-[rgb(24,24,24)] flex items-center w-fit gap-[30px] hover:rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined ">home</span> Home
+                <ul class="text-lg space-y-5 text-2xl">
+                    <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">home</span> Home
                     </li>
-                    <li
-                        class="hover:bg-[rgb(24,24,24)] flex items-center w-fit gap-[30px] hover:rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined ">search</span> Explore
+                    <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">search</span> Explore
                     </li>
-                    <li
-                        class="hover:bg-[rgb(24,24,24)] flex items-center w-fit gap-[30px] hover:rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">Notifications</span> Notifications
+                    <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">notifications</span> Notifications
                     </li>
-                    <li
-                        class="hover:bg-[rgb(24,24,24)] flex items-center w-fit gap-[30px] hover:rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">chat </span> Messages
+                    <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">chat</span> Messages
                     </li>
-                    <li
-                        class="hover:bg-[rgb(24,24,24)] flex items-center w-fit gap-[30px] hover:rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">automation</span> Grok
+                    <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">smart_toy</span> Grok
                     </li>
-                    <li
-                        class="hover:bg-[rgb(24,24,24)] flex items-center w-fit gap-[30px] hover:rounded-full py-2 px-4">
+                    <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
                         <span class="material-symbols-outlined">person</span> Profile
                     </li>
                 </ul>
             </div>
         </div>
 
-        <!-- Center Content -->
-        <!-- <div class="center w-2/4 border-x-[0.1px] border-t-white p-4">
-
-            <div class="top  flex flex-row justify-between  ">
-
-                <div class="foryou bg-gray-600 flex items h-9 w-8">For You </div>
-                <div class="following bg-red-700  ">Following</div>
-                
+        <!-- Main Content -->
+        <div class="w-[50%] border-x border-gray-700">
+            <div class="flex border-b border-gray-700">
+                <div class="flex flex-col w-1/2 items-center py-2 relative">
+                    For You
+                    <div class="bg-blue-600 h-1 w-12 rounded-full absolute bottom-0"></div>
+                </div>
+                <div class="flex flex-col w-1/2 items-center py-2">Following</div>
             </div>
-
-
-        </div> -->
-
-        <div class="center w-2/4 border-x-[0.1px] border-t-white p-4">
-
-            <div class="test flex  ">
-
-                <div class="folllowing w-[50%] bg-green-100 flex justify-center">  following</div>
-                <div class="foryou w-[50%] bg-orange-600 flex justify-center" > for you</div>    
-
-              
+            <div class="border-b border-gray-700 h-36 flex flex-col">
+                <div class="h-4/5 w-full flex items-center pl-8 gap-6">
+                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                        <img src="profile1.jpg" alt="Profile" class="h-full w-full object-cover">
+                    </div>
+                    <p class="text-xl text-gray-400">What's Happening?</p>
+                </div>
+                <div class="flex justify-between items-center w-11/12 ml-auto h-1/5 pr-4 mb-[10px]">
+                    <div class="flex gap-3">
+                        <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">photo_camera</span>
+                        <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">videocam</span>
+                        <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">image</span>
+                        <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">location_on</span>
+                        <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">event</span>
+                    </div>
+                    <button type="button" class="bg-white text-black rounded-full h-9 w-16 text-sm font-bold">Post</button>
+                </div>
             </div>
-
         </div>
-
-        
-
-
-
-
-
 
         <!-- Right Sidebar -->
-        <div class="w-1/4 p-4 right">
-            <div class="search flex items-center">
-
-                <img src="search.png" alt="search" class="absolute ml-[23px] saturate-0">
-                <input type="text" placeholder="search"
-                    class="w-[100%] rounded-full px-8 py-[9px] m-3 border-[0.1px] border-gray-700 bg-transparent  placeholder:pl-[18px]">
+        <div class="w-1/4 p-4">
+            <div class="search relative">
+                <img src="search.png" alt="Search Icon" class="absolute left-6 top-1/2 -translate-y-1/2 opacity-50 w-5 h-5">
+                <input type="text" placeholder="Search" class="w-full rounded-full py-2 pl-12 pr-4 border border-gray-700 bg-transparent placeholder-gray-500">
             </div>
-
-            <div class="prenium border-[0.1px] px-5 py-5 mt-[20px] rounded-[12px]">
-                <h3 class="heading text-[23px] pb-[16px] font-bold">Subscribe to Premium</h3>
-                <h7 class="text-sm">Subscribe to unlock new features and if eligible, receive a share of revenue.</h7>
-                <div
-                    class="buttons bg-[rgb(26,140,216)] w-[96px] p-[8px] mt-[18px] rounded-full font-extrabold hover:bg-[rgb(19,101,156)]">
-                    <button>Subscribe</button>
-                </div>
+            <div class="premium border border-gray-700 px-5 py-5 mt-5 rounded-xl">
+                <h3 class="text-xl font-bold pb-4">Subscribe to Premium</h3>
+                <p class="text-sm">Subscribe to unlock new features and, if eligible, receive a share of revenue.</p>
+                <button type="button" class="bg-blue-500 w-24 py-2 mt-4 rounded-full font-bold hover:bg-blue-600">Subscribe</button>
             </div>
-
-
-
-            <div class="follow border-[0.1px] px-5 py-5 mt-[20px] rounded-[12px] flex flex-col gap-3">
-                <h1 class="heading text-[23px] pb-[16px] font-bold  ">Who to follow</h1>
-
-
-
-
-
-
-                <div class="profile1 flex flex-row justify-between">
-                    <div class="pflogo bg-purple-900 w-[56px] h-[56px] items-center rounded-full ">
-
-                        <img src="profile1w.jpg" class="object-center object-cover w-full h-full rounded-full" />
-
+            <div class="follow border border-gray-700 px-5 py-5 mt-5 rounded-xl flex flex-col gap-3">
+                <h3 class="text-xl font-bold pb-4">Who to follow</h3>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <img src="assets/profile1w.jpg" alt="Profile 1" class="w-12 h-12 rounded-full object-cover" />
+                        <div class="text-lg">Rajlaxmi_c</div>
                     </div>
-                    <div class="name  font-light text-[20px]  ">Rajlaxmi_c</div>
-
-
-
-                    <button
-                        class="buttons  ml-8 bg-[rgb(255,255,255)] text-black rounded-full h-[36px] text-[14px] w-[60px] items-end  ">
-                        Follow
-                    </button>
-
-
+                    <button type="button" class="bg-white text-black rounded-full h-9 w-16 text-sm">Follow</button>
                 </div>
-
-
-
-
-                <div class="profile2 flex flex-row justify-between m-12px">
-
-                    <div class="pflogo bg-purple-900 w-[56px] h-[56px] items-center rounded-full ">
-
-                        <img src="profile1w.jpg" class="object-center object-cover w-full h-full rounded-full " />
-
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <img src="assets/profile2.jpg" alt="Profile 2" class="w-12 h-12 rounded-full object-cover" />
+                        <div class="text-lg">User2</div>
                     </div>
-                    <div class="name  font-light text-[20px]  ">Rajlaxmi_c</div>
-
-
-
-                    <button
-                        class="buttons  ml-8 bg-[rgb(255,255,255)] text-black rounded-full h-[36px] text-[14px] w-[60px] items-end  ">
-                        Follow
-                    </button>
-
+                    <button type="button" class="bg-white text-black rounded-full h-9 w-16 text-sm">Follow</button>
                 </div>
-                <div class="profile3 flex flex-row justify-between">
-
-                    <div class="pflogo bg-purple-900 w-[56px] h-[56px] items-center rounded-full ">
-
-                        <img src="profile1q.jpg"
-                            class="object-center object-cover w-full h-full rounded-full p-[12px]" />
-
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <img src="assets/profile3.jpg" alt="Profile 3" class="w-12 h-12 rounded-full object-cover" />
+                        <div class="text-lg">User3</div>
                     </div>
-                    <div class="name  font-light text-[20px]  ">Rajlaxmi_c</div>
-
-
-
-                    <button
-                        class="buttons  ml-8 bg-[rgb(255,255,255)] text-black rounded-full h-[36px] text-[14px] w-[60px] items-end  ">
-                        Follow
-                    </button>
-
+                    <button type="button" class="bg-white text-black rounded-full h-9 w-16 text-sm">Follow</button>
                 </div>
-
-
             </div>
         </div>
-
-
-
-
-    </div>
-
     </div>
 </body>
-
 </html>
