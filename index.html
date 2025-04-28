@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,12 +8,13 @@
     <link rel="stylesheet" href="src/output.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
+
 <body class="bg-black text-white">
     <div class="flex max-w-screen-xl mx-auto min-h-screen">
         <!-- Left Sidebar -->
         <div class="w-[23%] p-4 border-r border-gray-700">
-            <div class="logo mb-6">
-                <svg viewBox="0 0 24 24" aria-label="X Logo" class="w-9 h-9 invert">
+            <div class="logo mb-6 ">
+                <svg viewBox="0 0 24 24" aria-label="X Logo" class="w-9 h-9 invert fixed">
                     <g>
                         <path
                             d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
@@ -20,27 +22,39 @@
                     </g>
                 </svg>
             </div>
-            <div class="sidebar">
+            <div class="sidebar  fixed pt-[30px] overflow-y-auto">
                 <ul class="text-lg space-y-5 text-2xl">
                     <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">home</span> Home
+                        <span class="material-symbols-outlined">home</span>  <span class="hidden md:block">Home</span>
                     </li>
                     <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">search</span> Explore
+                        <span class="material-symbols-outlined">search</span>  <span class="hidden md:block">Explore</span>
                     </li>
                     <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">notifications</span> Notifications
+                        <span class="material-symbols-outlined">notifications</span> <span class="hidden md:block">Notifications</span>
                     </li>
                     <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">chat</span> Messages
+                        <span class="material-symbols-outlined">chat</span>  <span class="hidden md:block">Messages</span>
                     </li>
                     <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">smart_toy</span> Grok
+                        <span class="material-symbols-outlined">smart_toy</span>  <span class="hidden md:block">Grok</span>
                     </li>
                     <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">person</span> Profile
+                        <span class="material-symbols-outlined">person</span>  <span class="hidden md:block">Profile</span>
                     </li>
                 </ul>
+
+                <div class="myslef bg-white text-black rounded-full flex items-center gap-3  p-[9px] mt-[20px]">
+                    <div class="pof overflow-hidden flex">
+                        <img src="girl-8.jpeg" class="w-12 h-12 rounded-full object-cover">
+
+                    </div>
+                    <div class="usernames flex flex-col">
+
+                        <span>Niddhi kash</span>
+                        <span class="text-gray-500">niddhi_duhhh</span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -56,7 +70,7 @@
             <div class="border-b border-gray-700 h-36 flex flex-col">
                 <div class="h-4/5 w-full flex items-center pl-8 gap-6">
                     <div class="w-12 h-12 rounded-full overflow-hidden">
-                        <img src="profile1.jpg" alt="Profile" class="h-full w-full object-cover">
+                        <img src="girl-8.jpeg" alt="Profile" class="h-full w-full object-cover">
                     </div>
                     <p class="text-xl text-gray-400">What's Happening?</p>
                 </div>
@@ -68,47 +82,458 @@
                         <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">location_on</span>
                         <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">event</span>
                     </div>
-                    <button type="button" class="bg-white text-black rounded-full h-9 w-16 text-sm font-bold">Post</button>
+                    <button type="button"
+                        class="bg-white text-black rounded-full h-9 w-16 text-sm font-bold hover:bg-[#D7DBDC]">Post</button>
                 </div>
             </div>
+
+
+            <div class="line bg-gray-600 h-[1px]"></div>
+
+            <div class="main  p-[12px] flex flex-col ">
+
+                <div class="infopic  flex gap-[12px] ">
+                    <div class="w-12 h-12 rounded-full overflow-hidden relative">
+                        <img src="girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
+                    </div>
+                    <div class="usernames">
+                        <div class="info  pt-[4px] font-bold w-full hover:underline">Saili Salvi</div>
+                        <div class="mininame text-[#676B70] font-light">Saili_12s</div>
+
+                    </div>
+                </div>
+
+                <div class="info2 flex w-[80%] relative   mx-auto "> Transformers are
+                    powerful deep learning models that revolutionized natural language processing. They use attention
+                    mechanisms to understand context and relationships in data, enabling tasks like translation,
+                    summarization, and text generation. </div>
+
+
+                <div class="alignment  relative overflow-hidden mt-[16px] mx-auto">
+                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted loop>
+                        <source src="trans.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="flex justify-between items-center  mx-auto h-1/5  w-[98%]  pt-[8px] text-gray-300">
+                        <div class="flex gap-3">
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#0A171F]">
+                                chat_bubble
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#071A14]">
+                                repeat
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#200914]">
+                                favorite
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                visibility
+                            </span>
+
+                            </span>
+                        </div>
+
+                        <div class="postleft pt-[8px] h-1/5">
+
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                upload
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                bookmark
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="line bg-gray-600 h-[1px]"></div>
+
+            <div class="main  p-[12px] flex flex-col ">
+
+                <div class="infopic  flex gap-[12px] ">
+                    <div class="w-12 h-12 rounded-full overflow-hidden relative">
+                        <img src="girl-6.jpeg" alt="Profile" class="h-full w-full object-cover">
+                    </div>
+                    <div class="usernames">
+                        <div class="info  pt-[4px] font-bold w-full hover:underline">Sakshi</div>
+                        <div class="mininame text-[#676B70] font-light">Sakshi_joginder</div>
+
+                    </div>
+                </div>
+
+
+                <div class="info2 flex w-[80%] relative   mx-auto "> Us😘 </div>
+
+
+                <div class="alignment  relative overflow-hidden mt-[16px] mx-auto">
+                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted loop>
+                        <source src="video4.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="flex justify-between items-center  mx-auto h-1/5  w-[98%]  pt-[8px] text-gray-300">
+                        <div class="flex gap-3">
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#0A171F]">
+                                chat_bubble
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#071A14]">
+                                repeat
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#200914]">
+                                favorite
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                visibility
+                            </span>
+
+                            </span>
+                        </div>
+
+                        <div class="postleft pt-[8px] h-1/5">
+
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                upload
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                bookmark
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="line bg-gray-600 h-[1px]"></div>
+
+            <div class="main  p-[12px] flex flex-col ">
+
+                <div class="infopic  flex gap-[12px] ">
+                    <div class="w-12 h-12 rounded-full overflow-hidden relative">
+                        <img src="girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
+                    </div>
+                    <div class="usernames">
+                        <div class="info  pt-[4px] font-bold w-full hover:underline">Saili Salvi</div>
+                        <div class="mininame text-[#676B70] font-light">Saili_12s</div>
+
+                    </div>
+                </div>
+
+                <div class="info2 flex w-[80%] relative   mx-auto "> Mimi </div>
+
+
+                <div class="alignment  relative overflow-hidden mt-[16px] mx-auto">
+                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted loop>
+                        <source src="video2.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="flex justify-between items-center  mx-auto h-1/5  w-[98%]  pt-[8px] text-gray-300">
+                        <div class="flex gap-3">
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#0A171F]">
+                                chat_bubble
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#071A14]">
+                                repeat
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#200914]">
+                                favorite
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                visibility
+                            </span>
+
+                            </span>
+                        </div>
+
+                        <div class="postleft pt-[8px] h-1/5">
+
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                upload
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                bookmark
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="line bg-gray-600 h-[1px]"></div>
+
+            <div class="main  p-[12px] flex flex-col ">
+
+                <div class="infopic  flex gap-[12px] ">
+                    <div class="w-12 h-12 rounded-full overflow-hidden relative">
+                        <img src="girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
+                    </div>
+                    <div class="usernames">
+                        <div class="info  pt-[4px] font-bold w-full hover:underline">Saili Salvi</div>
+                        <div class="mininame text-[#676B70] font-light">Saili_12s</div>
+
+                    </div>
+                </div>
+
+                <div class="info2 flex w-[80%] relative   mx-auto "> Hona tha Pyaar ❤️ </div>
+
+
+                <div class="alignment  relative overflow-hidden mt-[16px] mx-auto">
+                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted loop>
+                        <source src="video3.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="flex justify-between items-center  mx-auto h-1/5  w-[98%]  pt-[8px] text-gray-300">
+                        <div class="flex gap-3">
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#0A171F]">
+                                chat_bubble
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#071A14]">
+                                repeat
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#200914]">
+                                favorite
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                visibility
+                            </span>
+
+                            </span>
+                        </div>
+
+                        <div class="postleft pt-[8px] h-1/5">
+
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                upload
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                bookmark
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="line bg-gray-600 h-[1px]"></div>
+
+            <div class="main  p-[12px] flex flex-col ">
+
+                <div class="infopic  flex gap-[12px] ">
+                    <div class="w-12 h-12 rounded-full overflow-hidden relative">
+                        <img src="girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
+                    </div>
+                    <div class="usernames">
+                        <div class="info  pt-[4px] font-bold w-full hover:underline">Saili Salvi</div>
+                        <div class="mininame text-[#676B70] font-light">Saili_12s</div>
+
+                    </div>
+                </div>
+
+                <div class="info2 flex w-[80%] relative   mx-auto "> Transformers are
+                    powerful deep learning models that revolutionized natural language processing. They use attention
+                    mechanisms to understand context and relationships in data, enabling tasks like translation,
+                    summarization, and text generation. </div>
+
+
+                <div class="alignment  relative overflow-hidden mt-[16px] mx-auto">
+                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted loop>
+                        <source src="video1.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="flex justify-between items-center  mx-auto h-1/5  w-[98%]  pt-[8px] text-gray-300">
+                        <div class="flex gap-3">
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#0A171F]">
+                                chat_bubble
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#071A14]">
+                                repeat
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#200914]">
+                                favorite
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                visibility
+                            </span>
+
+                            </span>
+                        </div>
+
+                        <div class="postleft pt-[8px] h-1/5">
+
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                upload
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                bookmark
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="line bg-gray-600 h-[1px]"></div>
+
+            <div class="main  p-[12px] flex flex-col ">
+
+                <div class="infopic  flex gap-[12px] ">
+                    <div class="w-12 h-12 rounded-full overflow-hidden relative">
+                        <img src="girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
+                    </div>
+                    <div class="usernames">
+                        <div class="info  pt-[4px] font-bold w-full hover:underline">Saili Salvi</div>
+                        <div class="mininame text-[#676B70] font-light">Saili_12s</div>
+
+                    </div>
+                </div>
+
+                <div class="info2 flex w-[80%] relative   mx-auto "> Tere Name se ji lu😒</div>
+
+
+                <div class="alignment  relative overflow-hidden mt-[16px] mx-auto">
+                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted loop>
+                        <source src="video5.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="flex justify-between items-center  mx-auto h-1/5  w-[98%]  pt-[8px] text-gray-300">
+                        <div class="flex gap-3">
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#0A171F]">
+                                chat_bubble
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#071A14]">
+                                repeat
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#200914]">
+                                favorite
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                visibility
+                            </span>
+
+                            </span>
+                        </div>
+
+                        <div class="postleft pt-[8px] h-1/5">
+
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                upload
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                bookmark
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="line bg-gray-600 h-[1px]"></div>
+
+            <div class="main  p-[12px] flex flex-col ">
+
+                <div class="infopic  flex gap-[12px] ">
+                    <div class="w-12 h-12 rounded-full overflow-hidden relative">
+                        <img src="girl-6.jpeg" alt="Profile" class="h-full w-full object-cover">
+                    </div>
+                    <div class="usernames">
+                        <div class="info  pt-[4px] font-bold w-full hover:underline">Sakshi</div>
+                        <div class="mininame text-[#676B70] font-light">Sakshi_joginder</div>
+
+                    </div>
+                </div>
+
+
+                <div class="info2 flex w-[80%] relative   mx-auto "> Last One🫦 </div>
+
+
+                <div class="alignment  relative overflow-hidden mt-[16px] mx-auto">
+
+                    <img src="girl-7.jpeg" class="rounded-[20px] shadow-lg h-full w-full object-cover">
+                    <div class="flex justify-between items-center  mx-auto h-1/5  w-[98%]  pt-[8px] text-gray-300">
+                        <div class="flex gap-3">
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#0A171F]">
+                                chat_bubble
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#071A14]">
+                                repeat
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#200914]">
+                                favorite
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                visibility
+                            </span>
+
+                            </span>
+                        </div>
+
+                        <div class="postleft pt-[8px] h-1/5">
+
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                upload
+                            </span>
+                            <span class="material-symbols-outlined p-2 rounded-full hover:bg-blue-500">
+                                bookmark
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
         </div>
 
+
+
         <!-- Right Sidebar -->
-        <div class="w-1/4 p-4">
-            <div class="search relative">
-                <img src="search.png" alt="Search Icon" class="absolute left-6 top-1/2 -translate-y-1/2 opacity-50 w-5 h-5">
-                <input type="text" placeholder="Search" class="w-full rounded-full py-2 pl-12 pr-4 border border-gray-700 bg-transparent placeholder-gray-500">
+        <div class="w-1/4 p-4 fixed top-0 right-0 h-screen overflow-y-auto">
+
+            <div class="search relative ">
+                <img src="search.png" alt="Search Icon"
+                    class="absolute left-6 top-1/2 -translate-y-1/2 opacity-50 w-5 h-5">
+                <input type="text" placeholder="Search"
+                    class="w-full rounded-full py-2 pl-12 pr-4 border border-gray-700 bg-transparent placeholder-gray-500">
             </div>
             <div class="premium border border-gray-700 px-5 py-5 mt-5 rounded-xl">
                 <h3 class="text-xl font-bold pb-4">Subscribe to Premium</h3>
                 <p class="text-sm">Subscribe to unlock new features and, if eligible, receive a share of revenue.</p>
-                <button type="button" class="bg-blue-500 w-24 py-2 mt-4 rounded-full font-bold hover:bg-blue-600">Subscribe</button>
+                <button type="button"
+                    class="bg-blue-500 w-24 py-2 mt-4 rounded-full font-bold hover:bg-blue-600">Subscribe</button>
             </div>
             <div class="follow border border-gray-700 px-5 py-5 mt-5 rounded-xl flex flex-col gap-3">
                 <h3 class="text-xl font-bold pb-4">Who to follow</h3>
                 <div class="flex justify-between items-center">
                     <div class="flex items-center gap-3">
-                        <img src="assets/profile1w.jpg" alt="Profile 1" class="w-12 h-12 rounded-full object-cover" />
+                        <img src="girl3.jpeg" alt="Profile 1" class="w-12 h-12 rounded-full object-cover" />
                         <div class="text-lg">Rajlaxmi_c</div>
                     </div>
                     <button type="button" class="bg-white text-black rounded-full h-9 w-16 text-sm">Follow</button>
                 </div>
                 <div class="flex justify-between items-center">
                     <div class="flex items-center gap-3">
-                        <img src="assets/profile2.jpg" alt="Profile 2" class="w-12 h-12 rounded-full object-cover" />
+                        <img src="girl-4.jpeg" alt="Profile 2" class="w-12 h-12 rounded-full object-cover" />
                         <div class="text-lg">User2</div>
                     </div>
                     <button type="button" class="bg-white text-black rounded-full h-9 w-16 text-sm">Follow</button>
                 </div>
                 <div class="flex justify-between items-center">
                     <div class="flex items-center gap-3">
-                        <img src="assets/profile3.jpg" alt="Profile 3" class="w-12 h-12 rounded-full object-cover" />
+                        <img src="girl.jpeg" alt="Profile 3" class="w-12 h-12 rounded-full object-cover" />
                         <div class="text-lg">User3</div>
                     </div>
                     <button type="button" class="bg-white text-black rounded-full h-9 w-16 text-sm">Follow</button>
                 </div>
             </div>
+
+
         </div>
     </div>
 </body>
+
 </html>
