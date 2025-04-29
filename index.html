@@ -10,11 +10,11 @@
 </head>
 
 <body class="bg-black text-white">
-    <div class="flex max-w-screen-xl mx-auto min-h-screen">
+    <div class="flex flex-col md:flex-row max-w-screen-xl mx-auto min-h-screen">
         <!-- Left Sidebar -->
-        <div class="w-[23%] p-4 border-r border-gray-700">
-            <div class="logo mb-6 ">
-                <svg viewBox="0 0 24 24" aria-label="X Logo" class="w-9 h-9 invert fixed">
+        <div class="w-full md:w-20 lg:w-64 xl:w-[23%] p-2 md:p-4 border-r border-gray-700 fixed md:static bottom-0 bg-black z-50">
+            <div class="logo mb-6 hidden md:block">
+                <svg viewBox="0 0 24 24" aria-label="X Logo" class="w-9 h-9 invert">
                     <g>
                         <path
                             d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
@@ -22,44 +22,42 @@
                     </g>
                 </svg>
             </div>
-            <div class="sidebar  fixed pt-[30px] overflow-y-auto">
-                <ul class="text-lg space-y-5 text-2xl">
-                    <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">home</span>  <span class="hidden md:block">Home</span>
+            <div class="sidebar pt-[30px] overflow-y-auto">
+                <ul class="flex md:block justify-between md:justify-start text-lg space-y-0 md:space-y-5 text-2xl">
+                    <li class="hover:bg-gray-900 flex items-center justify-center md:justify-start w-full md:w-fit gap-6 rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">home</span>  <span class="hidden lg:block">Home</span>
                     </li>
-                    <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">search</span>  <span class="hidden md:block">Explore</span>
+                    <li class="hover:bg-gray-900 flex items-center justify-center md:justify-start w-full md:w-fit gap-6 rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">search</span>  <span class="hidden lg:block">Explore</span>
                     </li>
-                    <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">notifications</span> <span class="hidden md:block">Notifications</span>
+                    <li class="hover:bg-gray-900 flex items-center justify-center md:justify-start w-full md:w-fit gap-6 rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">notifications</span> <span class="hidden lg:block">Notifications</span>
                     </li>
-                    <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">chat</span>  <span class="hidden md:block">Messages</span>
+                    <li class="hover:bg-gray-900 flex items-center justify-center md:justify-start w-full md:w-fit gap-6 rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">chat</span>  <span class="hidden lg:block">Messages</span>
                     </li>
-                    <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">smart_toy</span>  <span class="hidden md:block">Grok</span>
+                    <li class="hover:bg-gray-900 flex items-center justify-center md:justify-start w-full md:w-fit gap-6 rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">smart_toy</span>  <span class="hidden lg:block">Grok</span>
                     </li>
-                    <li class="hover:bg-gray-900 flex items-center w-fit gap-6 rounded-full py-2 px-4">
-                        <span class="material-symbols-outlined">person</span>  <span class="hidden md:block">Profile</span>
+                    <li class="hover:bg-gray-900 flex items-center justify-center md:justify-start w-full md:w-fit gap-6 rounded-full py-2 px-4">
+                        <span class="material-symbols-outlined">person</span>  <span class="hidden lg:block">Profile</span>
                     </li>
                 </ul>
 
-                <div class="myslef bg-white text-black rounded-full flex items-center gap-3  p-[9px] mt-[20px]">
+                <div class="myslef bg-white text-black rounded-full flex items-center p-[9px] mt-[20px] gap-[6px] w-full md:w-auto">
                     <div class="pof overflow-hidden flex">
-                        <img src="girl-8.jpeg" class="w-12 h-12 rounded-full object-cover">
-
+                        <img src="Assets/girl-8.jpeg" class="w-12 h-12 rounded-full object-cover">
                     </div>
-                    <div class="usernames flex flex-col">
-
+                    <div class="usernames flex flex-col  xl:block">
                         <span>Niddhi kash</span>
-                        <span class="text-gray-500">niddhi_duhhh</span>
+                        <span class="text-gray-500 md:text-black">niddhi_duhhh</span>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Main Content -->
-        <div class="w-[50%] border-x border-gray-700">
+        <div class="w-full md:w-1/2 lg:w-2/3 xl:w-[50%] border-x border-gray-700 mt-16 md:mt-0 mb-16 md:mb-0">
             <div class="flex border-b border-gray-700">
                 <div class="flex flex-col w-1/2 items-center py-2 relative">
                     For You
@@ -70,7 +68,7 @@
             <div class="border-b border-gray-700 h-36 flex flex-col">
                 <div class="h-4/5 w-full flex items-center pl-8 gap-6">
                     <div class="w-12 h-12 rounded-full overflow-hidden">
-                        <img src="girl-8.jpeg" alt="Profile" class="h-full w-full object-cover">
+                        <img src="Assets/girl-8.jpeg" alt="Profile" class="h-full w-full object-cover">
                     </div>
                     <p class="text-xl text-gray-400">What's Happening?</p>
                 </div>
@@ -94,11 +92,11 @@
 
                 <div class="infopic  flex gap-[12px] ">
                     <div class="w-12 h-12 rounded-full overflow-hidden relative">
-                        <img src="girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
+                        <img src="assets/girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
                     </div>
                     <div class="usernames">
-                        <div class="info  pt-[4px] font-bold w-full hover:underline">Saili Salvi</div>
-                        <div class="mininame text-[#676B70] font-light">Saili_12s</div>
+                        <div class="info  pt-[4px] font-bold w-full hover:underline">Mohini</div>
+                        <div class="mininame text-[#676B70] font-light">mohini_12s</div>
 
                     </div>
                 </div>
@@ -110,8 +108,8 @@
 
 
                 <div class="alignment  relative overflow-hidden mt-[16px] mx-auto">
-                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted loop>
-                        <source src="trans.mp4" type="video/mp4">
+                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted >
+                        <source src="Assets/trans.mp4" type="video/mp4">
                     </video>
 
                     <div class="flex justify-between items-center  mx-auto h-1/5  w-[98%]  pt-[8px] text-gray-300">
@@ -152,7 +150,7 @@
 
                 <div class="infopic  flex gap-[12px] ">
                     <div class="w-12 h-12 rounded-full overflow-hidden relative">
-                        <img src="girl-6.jpeg" alt="Profile" class="h-full w-full object-cover">
+                        <img src="Assets/girl-6.jpeg" alt="Profile" class="h-full w-full object-cover">
                     </div>
                     <div class="usernames">
                         <div class="info  pt-[4px] font-bold w-full hover:underline">Sakshi</div>
@@ -166,8 +164,8 @@
 
 
                 <div class="alignment  relative overflow-hidden mt-[16px] mx-auto">
-                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted loop>
-                        <source src="video4.mp4" type="video/mp4">
+                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted >
+                        <source src="Assets/video4.mp4" type="video/mp4">
                     </video>
 
                     <div class="flex justify-between items-center  mx-auto h-1/5  w-[98%]  pt-[8px] text-gray-300">
@@ -209,11 +207,11 @@
 
                 <div class="infopic  flex gap-[12px] ">
                     <div class="w-12 h-12 rounded-full overflow-hidden relative">
-                        <img src="girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
+                        <img src="Assets/girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
                     </div>
                     <div class="usernames">
-                        <div class="info  pt-[4px] font-bold w-full hover:underline">Saili Salvi</div>
-                        <div class="mininame text-[#676B70] font-light">Saili_12s</div>
+                        <div class="info  pt-[4px] font-bold w-full hover:underline">Sanvi deshpande</div>
+                        <div class="mininame text-[#676B70] font-light">Sanvi_12s</div>
 
                     </div>
                 </div>
@@ -222,8 +220,8 @@
 
 
                 <div class="alignment  relative overflow-hidden mt-[16px] mx-auto">
-                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted loop>
-                        <source src="video2.mp4" type="video/mp4">
+                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted >
+                        <source src="Assets/video2.mp4" type="video/mp4">
                     </video>
 
                     <div class="flex justify-between items-center  mx-auto h-1/5  w-[98%]  pt-[8px] text-gray-300">
@@ -267,11 +265,11 @@
 
                 <div class="infopic  flex gap-[12px] ">
                     <div class="w-12 h-12 rounded-full overflow-hidden relative">
-                        <img src="girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
+                        <img src="Assets/girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
                     </div>
                     <div class="usernames">
-                        <div class="info  pt-[4px] font-bold w-full hover:underline">Saili Salvi</div>
-                        <div class="mininame text-[#676B70] font-light">Saili_12s</div>
+                        <div class="info  pt-[4px] font-bold w-full hover:underline">Divya Khotkar</div>
+                        <div class="mininame text-[#676B70] font-light">divya_12s</div>
 
                     </div>
                 </div>
@@ -280,8 +278,8 @@
 
 
                 <div class="alignment  relative overflow-hidden mt-[16px] mx-auto">
-                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted loop>
-                        <source src="video3.mp4" type="video/mp4">
+                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted >
+                        <source src="Assets/video3.mp4" type="video/mp4">
                     </video>
 
                     <div class="flex justify-between items-center  mx-auto h-1/5  w-[98%]  pt-[8px] text-gray-300">
@@ -323,11 +321,11 @@
 
                 <div class="infopic  flex gap-[12px] ">
                     <div class="w-12 h-12 rounded-full overflow-hidden relative">
-                        <img src="girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
+                        <img src="Assets/girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
                     </div>
                     <div class="usernames">
-                        <div class="info  pt-[4px] font-bold w-full hover:underline">Saili Salvi</div>
-                        <div class="mininame text-[#676B70] font-light">Saili_12s</div>
+                        <div class="info  pt-[4px] font-bold w-full hover:underline">Anjali</div>
+                        <div class="mininame text-[#676B70] font-light">anju_12s</div>
 
                     </div>
                 </div>
@@ -339,8 +337,8 @@
 
 
                 <div class="alignment  relative overflow-hidden mt-[16px] mx-auto">
-                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted loop>
-                        <source src="video1.mp4" type="video/mp4">
+                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted >
+                        <source src="Assets/video1.mp4" type="video/mp4">
                     </video>
 
                     <div class="flex justify-between items-center  mx-auto h-1/5  w-[98%]  pt-[8px] text-gray-300">
@@ -382,11 +380,11 @@
 
                 <div class="infopic  flex gap-[12px] ">
                     <div class="w-12 h-12 rounded-full overflow-hidden relative">
-                        <img src="girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
+                        <img src="Assets/girlx.jpeg" alt="Profile" class="h-full w-full object-cover">
                     </div>
                     <div class="usernames">
-                        <div class="info  pt-[4px] font-bold w-full hover:underline">Saili Salvi</div>
-                        <div class="mininame text-[#676B70] font-light">Saili_12s</div>
+                        <div class="info  pt-[4px] font-bold w-full hover:underline">Sharvni singh</div>
+                        <div class="mininame text-[#676B70] font-light">Shravnii_12s</div>
 
                     </div>
                 </div>
@@ -395,8 +393,8 @@
 
 
                 <div class="alignment  relative overflow-hidden mt-[16px] mx-auto">
-                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted loop>
-                        <source src="video5.mp4" type="video/mp4">
+                    <video class=" rounded-[20px] shadow-lg h-full w-full object-cover" controls autoplay muted >
+                        <source src="Assets/video5.mp4" type="video/mp4">
                     </video>
 
                     <div class="flex justify-between items-center  mx-auto h-1/5  w-[98%]  pt-[8px] text-gray-300">
@@ -438,7 +436,7 @@
 
                 <div class="infopic  flex gap-[12px] ">
                     <div class="w-12 h-12 rounded-full overflow-hidden relative">
-                        <img src="girl-6.jpeg" alt="Profile" class="h-full w-full object-cover">
+                        <img src="Assets/girl-6.jpeg" alt="Profile" class="h-full w-full object-cover">
                     </div>
                     <div class="usernames">
                         <div class="info  pt-[4px] font-bold w-full hover:underline">Sakshi</div>
@@ -453,7 +451,7 @@
 
                 <div class="alignment  relative overflow-hidden mt-[16px] mx-auto">
 
-                    <img src="girl-7.jpeg" class="rounded-[20px] shadow-lg h-full w-full object-cover">
+                    <img src="Assets/girl-7.jpeg" class="rounded-[20px] shadow-lg h-full w-full object-cover">
                     <div class="flex justify-between items-center  mx-auto h-1/5  w-[98%]  pt-[8px] text-gray-300">
                         <div class="flex gap-3">
                             <span class="material-symbols-outlined p-2 rounded-full hover:bg-[#0A171F]">
@@ -486,16 +484,12 @@
 
 
             </div>
-
         </div>
 
-
-
         <!-- Right Sidebar -->
-        <div class="w-1/4 p-4 fixed top-0 right-0 h-screen overflow-y-auto">
-
+        <div class="w-full md:w-80 xl:w-1/4 p-4 fixed md:static top-0 right-0 h-screen overflow-y-auto bg-black z-40 hidden md:block">
             <div class="search relative ">
-                <img src="search.png" alt="Search Icon"
+                <img src="Assets/search.png" alt="Search Icon"
                     class="absolute left-6 top-1/2 -translate-y-1/2 opacity-50 w-5 h-5">
                 <input type="text" placeholder="Search"
                     class="w-full rounded-full py-2 pl-12 pr-4 border border-gray-700 bg-transparent placeholder-gray-500">
@@ -510,30 +504,26 @@
                 <h3 class="text-xl font-bold pb-4">Who to follow</h3>
                 <div class="flex justify-between items-center">
                     <div class="flex items-center gap-3">
-                        <img src="girl3.jpeg" alt="Profile 1" class="w-12 h-12 rounded-full object-cover" />
-                        <div class="text-lg">Rajlaxmi_c</div>
+                        <img src="Assets/girl3.jpeg" alt="Profile 1" class="w-12 h-12 rounded-full object-cover" />
+                        <div class="text-lg">Sunita</div>
                     </div>
                     <button type="button" class="bg-white text-black rounded-full h-9 w-16 text-sm">Follow</button>
                 </div>
                 <div class="flex justify-between items-center">
                     <div class="flex items-center gap-3">
-                        <img src="girl-4.jpeg" alt="Profile 2" class="w-12 h-12 rounded-full object-cover" />
-                        <div class="text-lg">User2</div>
+                        <img src="Assets/girl-4.jpeg" alt="Profile 2" class="w-12 h-12 rounded-full object-cover" />
+                        <div class="text-lg">Meownis</div>
                     </div>
                     <button type="button" class="bg-white text-black rounded-full h-9 w-16 text-sm">Follow</button>
                 </div>
                 <div class="flex justify-between items-center">
                     <div class="flex items-center gap-3">
-                        <img src="girl.jpeg" alt="Profile 3" class="w-12 h-12 rounded-full object-cover" />
-                        <div class="text-lg">User3</div>
+                        <img src="Assets/girl.jpeg" alt="Profile 3" class="w-12 h-12 rounded-full object-cover" />
+                        <div class="text-lg">🦋</div>
                     </div>
                     <button type="button" class="bg-white text-black rounded-full h-9 w-16 text-sm">Follow</button>
                 </div>
-            </div>
-
-
         </div>
     </div>
 </body>
-
 </html>
